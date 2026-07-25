@@ -4,14 +4,14 @@
 %define debug_package %{nil}
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    6
+Version:    %{upstream_version}
+Release:    7
 
 Summary:    Audio::Beep player module using the B<beep> program
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Audio/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/Audio-Beep
+Source0:    https://cpan.metacpan.org/authors/id/G/GI/GIULIENK/Audio-Beep-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Test::More)
