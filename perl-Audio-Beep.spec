@@ -1,15 +1,16 @@
 %define upstream_name    Audio-Beep
+%define upstream_version 0.11
 %define debug_package %{nil}
 
 Name:       perl-%{upstream_name}
-Version:    0.11
-Release:    8
+Version:	0.11
+Release:	1
 
 Summary:    Audio::Beep player module using the B<beep> program
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/dist/Audio-Beep
-Source0:    https://cpan.metacpan.org/authors/id/G/GI/GIULIENK/Audio-Beep-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/G/GI/GIULIENK/Audio-Beep-0.11.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Test::More)
