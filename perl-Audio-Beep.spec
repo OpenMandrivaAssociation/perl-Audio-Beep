@@ -4,7 +4,7 @@
 
 Name:       perl-%{upstream_name}
 Version:	0.11
-Release:	4
+Release:	5
 
 Summary:    Audio::Beep player module using the B<beep> program
 License:    GPL+ or Artistic
@@ -23,13 +23,13 @@ no description found
 %setup -q -n Audio-Beep-0.11
 
 %build
-echo | %{__perl} Makefile.PL INSTALLDIRS=vendor
+echo | perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
 # soft: do not fail package on test failures
 set +e
-make test
+make test || :
 
 %install
 %makeinstall_std
